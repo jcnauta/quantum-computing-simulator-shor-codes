@@ -72,13 +72,13 @@ def _stateForInput(th, ph):
  
 def testErrorCorrection():
   server_url = r'https://api.quantum-inspire.com'
-  #print('Enter mail address')
-  #email = input()
+  
+  print('Enter mail address')
+  email = input()
 
-  #print('Enter password')
-  #password = getpass()
-  #auth = (email, password)
-  auth = ('niels.neumann@tno.nl', 'VakantiereisnaarTokioenKodokan')
+  print('Enter password')
+  password = getpass()
+  auth = (email, password)
   
   qi = QuantumInspireAPI(server_url, auth)
   backend = qi.get_backend_type_by_name('QX single-node simulator')
